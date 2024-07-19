@@ -1,18 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UserInputComponent } from './user-input/user-input.component';
+import { UserService } from './user.service';
+import { UserResultComponent } from './user-result/user-result.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserInputComponent,
+    UserResultComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,20 @@
+<div>
+    <h2>User Input Form</h2>
+    <form (ngSubmit)="saveData()">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" [(ngModel)]="newUser.name" name="name" required>
+      </div>
+      <div>
+        <label for="workoutMinutes">Workout Minutes:</label>
+        <input type="number" id="workoutMinutes" [(ngModel)]="newUser.workoutMinutes" name="workoutMinutes" required>
+      </div>
+      <div>
+        <label for="workoutType">Workout Type:</label>
+        <input type="text" id="workoutType" [(ngModel)]="newUser.workoutType" name="workoutType" required>
+      </div>
+      <button type="submit">Save</button>
+    </form>
+  
+  
+   
